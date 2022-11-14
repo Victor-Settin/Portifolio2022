@@ -1,38 +1,402 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap');
+
+  :focus{
+    outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
   }
+.page{
+    background: rgb(44,43,48);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li{
+    list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.section-one,.section-two{
+    background: rgb(70,70,73);
+    background: radial-gradient(circle, rgba(70,70,73,1) 1%, rgba(44,43,48,1) 100%);
+    min-height: 90.5vh;
+    width: 90vw;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header{
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95vw;
+    margin: auto;
+    gap: 33%;
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    color: #d3d3d3;
+    gap: 10px;padding-left: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.content-header span{
+    color: #fff;
+}
+.menu{
+    display: flex;
+    font-weight: 400;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+  .site-navigation ul {
+    background: transparent;
+    list-style: none;
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .site-navigation li {
+    color: #d3d3d3;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 100%;
   }
+  .site-navigation li a {
+    color: #d3d3d3;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .site-navigation li:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.3s;
+  }
+  
+  .site-navigation ul li ul {
+    background: #4f4f51;
+    visibility: hidden;
+    float: left;
+    min-width: 150px;
+    position: absolute;
+    transition: visibility 0.65s ease-in;
+    margin-top:180px;
+    padding: 0px;
+    left: 0;
+    z-index: 999;
+    border-radius: 5px;
+  }
+  
+  .site-navigation ul li:hover ul,
+  .site-navigation ul li ul:hover {
+     visibility: visible;
+  }
+  
+
+  .site-navigation ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+  
+  .site-navigation ul li ul li:hover {
+    background:#4f4f51;
+    border-radius: 3px;
+  }
+  #navigation{
+    height: 100%;
+  }
+  .dropdown li{
+    padding: 10px;
+  }
+  .aside-left{
+    width: 50%;
+    color: #fff;
+    padding-bottom: 45px;
+  }
+  .aside-left .i-am{
+    font-size: 70px;
+    line-height: 74px;
+    font-weight: 600;
+    margin: 35px 0px 10px 0px;
+  }
+  .content-about,.content-lets-worked{
+    display: flex;
+    width: 77vw;
+    margin: auto;
+    height: 100%;
+    gap: 10%;
+  }
+  .aside-right{
+    width: 50%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .linha-x{
+    background-color: #fff;
+    height: 7px;
+    width: 23.5%;
+    border-radius: 1px;
 }
+.description{
+    padding-bottom: 35px;
+    color: #d3d3d3;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-bottom: 1px solid rgba(189, 189, 189, 0.18);
+  }
+  .experience-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .experience-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .experience{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'League Spartan', sans-serif;
+  }
+  .number{
+    font-size: 60px;
+  }
+  .w{
+    width: 30px;
+  }
+  .font {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 8px;
+  }
+  .section-two .content-lets-worked{
+    display: flex;
+    flex-direction: column;
+    width: 77vw;
+    margin: auto;
+    height: 100%;
+  }
+  .section-two .aside-left{
+    width: 100%;
+  }
+  .section-two .linha-x{
+    width: 11%;
+  }
+  .section-two .description{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    color: #d3d3d3;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .section-two .sub-title{
+    font-size: 30px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+ .box-section-two{
+    width: 40%;
+ }
+ .social-list ul{
+    display: flex;
+    gap: 20px;
+ }
+
+ 
+
+
+/* Formulario de contacto*/
+.form_wrap{
+    width:100%;
+    height: auto;
+    display: flex;
+    background: rgb(70,70,73);
+    background: radial-gradient(circle, rgba(70,70,73,1) 99%, rgba(44,43,48,1) 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+form.form_contact{
+    width: 100%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+	color: #5A5A5A;
+	font-size:14px;
+	font-weight: 400;
+    border-radius: 3px;
+}
+
+form.form_contact input,
+form.form_contact textarea:not(.not){
+    text-transform: capitalize;
+}
+#email{
+    text-transform: unset;
+}
+
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"]{
+    width: 180px;
+	background: #2c2b30;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+    margin: auto;
+    align-self: flex-end;
+    font-family: 'League Spartan', sans-serif;
+    color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover{
+    background: #606065;
+}
+
+form.form_contact input[type="submit"]:active{
+    background: rgb(44,43,48);
+    background: radial-gradient(circle, rgba(44,43,48,0.6898109585631127) 100%, rgba(29,205,132,1) 100%);
+}
+
+/* Ventana de errores*/
+.modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #C5C5C5;
+	margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+	padding: 3px 10px;
+	margin-top: 10px;
+
+	background: #E25151;
+	color: #fff;
+	border: 2px solid #B14141;
+	cursor: pointer;
+	
+}
+.section-dow-work{
+    display: flex;
+}
+
+.card-call-me{
+    width: 32%;
+}
+
+form.form_contact label{
+    color: #d3d3d3;
+}
+
+/*fim  Formulario de contacto*/ 
